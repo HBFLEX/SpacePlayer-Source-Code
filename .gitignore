@@ -1,0 +1,7 @@
+build/
+node_modules/
+SpacePlayer-linux-x64/
+SpacePlayer-win32-x64/
+serial-codes.txt
+*.zip
+*.exe

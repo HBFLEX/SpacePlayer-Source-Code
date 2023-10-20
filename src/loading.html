@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<style>
+	body{
+		background-color: #302856;
+		margin: 0;
+		padding: 0;
+		font-family: helvetica;
+		overflow-x: hidden;
+		overflow-y: hidden;
+		color: white;
+	}
+	video{
+		position: fixed;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		min-width: 100%;
+		min-height: 100%;
+	}
+
+	.copyright{
+		position: absolute;
+		bottom: 10px;
+		text-align: center;
+		width: 100%;
+		color: antiquewhite;
+		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+		font-size: 14px;
+	}
+
+	.version{
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		margin-right: 10px;
+		color: rgba(12, 12, 11, 0.966);
+		background-color: rgb(38, 41, 41);
+		padding: 2px;
+		border-radius: 3px;
+	}
+</style>
+<body>
+
+<video autoplay muted loop class="alien">
+	<source src="./static/images/alien-logo.mp4" type="video/mp4">
+</video>
+
+<div class="copyright">
+	<p style="color: rgb(180, 162, 136);">&copy; 2023. SpaceLabs Technologies. All rights reserved</p>
+	<p class="version">
+		v1.5.2
+	</p>
+</div>
+
+</body>
+</html>

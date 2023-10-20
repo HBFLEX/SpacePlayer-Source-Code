@@ -1,0 +1,222 @@
+html,
+body{
+	background-color: #000;
+	margin: 0;
+	padding: 0;
+	font-family: helvetica;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	color: white;
+}
+
+::-webkit-scrollbar{
+	width: 10px;
+	border-radius: 20px;
+	background: linear-gradient(180deg, #302856, #208091, 0.5);
+}
+
+::-webkit-scrollbar-track{
+	border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb{
+	background: #2854ae;
+	border-radius: 10px;
+}
+
+#video-player{
+	position: fixed;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	display: none;
+}
+
+.menu-header{
+	color: #e7e7e7;
+	font-weight: bolder;
+}
+
+.coverImage{
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	/* position: fixed;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	 */
+}
+
+.player{
+	opacity: 0;
+	position: absolute;
+	bottom: 0;
+	margin: 0;
+	width: 100%;
+	background: linear-gradient(180deg, #09659b, #1e7571);
+	transition: 1s all ease;
+}
+
+.playerArea{
+	position: absolute;
+	display: block;
+	margin: 0;
+	bottom: 0;
+	width: 100%;
+	height: 70px;
+	overflow-y: hidden;
+	transition: opacity 1s ease;
+}
+
+.playerArea:hover .player{
+	overflow-y: hidden;
+	opacity: 1;
+}
+
+.controls{
+	display: flex;
+	align-items: center;
+	align-content: center;
+	column-gap: 8px;
+	padding: 0.5rem 2rem;
+}
+
+.player-control-btn{
+	background: transparent;
+	border: none;
+	color: white;
+}
+
+.track-progress{
+	width: 80%;
+	accent-color: #e5a918;
+}
+
+.track-progress::-webkit-slider-thumb{
+	width: 50px;
+}
+
+.track-progress::-webkit-slider-runnable-track{
+	border-radius: 10px;
+}
+
+.track-volume{
+	width: 10%;
+	height: 50px;
+	accent-color: #f2ea66;
+}
+
+input[type='range']{
+	cursor: pointer;
+}
+
+
+.track-current-time{
+	font-style: initial;
+}
+
+
+.fa{
+	cursor: pointer;
+}
+
+.upNextDisplay{
+	position: absolute;
+	opacity: 0;
+	width: 30%;
+	top: 30px;
+	right: 10px;
+	background-color: rgba(46, 21, 75, 0.6);
+	color:#e2e0eb;
+	padding: 10px;
+	border-radius: 8px;
+	text-align: center;
+	cursor: default;
+	word-wrap: break-word;
+	transition: all 1s ease-in;
+}
+
+.toggleFullScreenArea{
+	position: absolute;
+	top: 0;
+	text-align: center;
+	width: 100%;
+	height: 70px;
+}
+
+.toggleFullScreenArea:hover .toggleFullScreen{
+	opacity: 1;
+}
+
+.toggleFullScreen{
+	position: absolute;
+	opacity: 0;
+	top: 25px;
+	left: 50%;
+	right: 50%;
+	transition: 1s all ease-in-out;
+}
+
+.keyEventDisplay{
+	position: absolute;
+	opacity: 0;
+	width: 20%;
+	top: 65px;
+	left: 50%;
+	right: 50%;
+	transition: all 1s ease-out;
+}
+
+.keyEventDisplay p{
+	color: #fff;
+	font-weight: 600;
+	font-size: 18px;
+}
+
+.prevSideBtnArea{
+	position: absolute;
+	left: 0;
+	width: 70px;
+	height: 100vh;
+}
+
+.prevSideBtnArea:hover .prevSideBtn{
+	opacity: 1;
+}
+
+.prevSideBtn{
+	position: absolute;
+	opacity: 0;
+	margin-left: 18.5px;
+	top: 50%;
+	bottom: 50%;
+	transition: 1s all ease-in-out;
+}
+
+.nextSideBtnArea{
+	position: absolute;
+	right: 0;
+	width: 70px;
+	height: 100vh;
+}
+
+.nextSideBtnArea:hover .nextSideBtn{
+	opacity: 1;
+}
+
+.nextSideBtn{
+	position: absolute;
+	opacity: 0;
+	top: 50%;
+	bottom: 50%;
+	transition: 1s all ease-in-out;
+}
+
+footer:hover{
+	display: block;
+}
